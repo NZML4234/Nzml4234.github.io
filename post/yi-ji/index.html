@@ -1,9 +1,11 @@
+
+<!DOCTYPE html>
 <html>
   <head>
     
 <meta charset="utf-8" >
 
-<title>Nzml4234</title>
+<title>乙己 | Nzml4234</title>
 <meta name="description" content="兴趣使然">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +15,12 @@
 <link rel="shortcut icon" href="https://nzml4234.github.io//favicon.ico?v=1588678499861">
 <link rel="stylesheet" href="https://nzml4234.github.io//styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -74,32 +82,41 @@
 </transition>
 
 
-        <div class="content-container">
+      <div class="content-container">
+        <div class="post-detail">
           
-          
+          <h2 class="post-title">乙己</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-05-05</span>
+            
+          </div>
+          <div class="post-content">
+            <p>不知道写点什么作为开始。</p>
+<p>自我介绍一下吧，<br>
+姓名：张山/進前 伍（sinzengo），<br>
+爱好：数学、地理、信息技术、汉字（其实是爱它的编码）、марксизм。</p>
+<p>联系方式，<br>
+QQ：2625054985<br>
+Email：nzml4234@protonmail.com</p>
+<p>在汉字编码方面的迫真成（搬）就（运）：<br>
+http://glyphwiki.org/wiki/Group:sinzengo_U%E5%A4%96%E5%AD%97%E9%9B%8601</p>
+<p>写于2020年劳动节假期最后一天。</p>
 
-<div class="archives-container">
-  
-    <h2 class="year">2020</h2>
-    
-      
-        <article class="post">
-          <a href="https://nzml4234.github.io/post/yi-ji/">
-            <h2 class="post-title">
-              乙己
-              <small>2020-05-05</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-  
-</div>
-
-
+          </div>
         </div>
 
-        <div class="site-footer">
+        
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
   <div class="slogan">兴趣使然</div>
   <div class="social-container">
     
@@ -118,8 +135,8 @@
 </div>
 
 
-      </div>
-      <script type="application/javascript">
+    </div>
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
@@ -133,8 +150,30 @@ var app = new Vue({
 </script>
 
 
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'b6bdf68647188b19780f',
+        clientSecret: 'c7d87d1909029059fb0b1eb0863dd2a93e0e6caa',
+        repo: 'Nzml4234.github.io',
+        owner: 'NZML4234',
+        admin: ['NZML4234'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
-    </div>
+
+
   </body>
 </html>
